@@ -1,35 +1,72 @@
-// font-family: 'BebasNeueBold';
+@import url("./variables.css");
 
-div {
+.container {
   width: 1440px;
-  margin: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: var(--root-font-family);
+  background-color: var(--root-bg-color);
+  font-size: var(--root-font-size);
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.hero-image-custom {
+.header {
+  padding: 41px 0 71px;
+  background-image: var(--header-bg-path);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 769px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+
+  .header-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+
+    .title {
+      font-family: var(--bebas-font-family);
+      font-size: 3.75rem;
+      font-weight: 700;
+      letter-spacing: 5.7px;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      font-weight: 600;
+    }
+  }
+
+  .bottom-text {
+    font-weight: 600;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 3.7px;
+  }
+}
+
+/* .hero-image-custom {
   div {
     color: white;
     margin: 0;
     text-align: center;
   }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
   background-image: url("../assets/images/header-bg.jpg");
   background-color: #cccccc;
   height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   position: relative;
-}
+} */
 
 .hero-image {
   background-image: url("../assets/images/header-bg.jpg");

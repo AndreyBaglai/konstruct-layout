@@ -1,0 +1,16 @@
+:root {
+  --root-font-family: "Open Sans", serif;
+  --root-font-size: 16px;
+  --root-bg-color: #3c3c3c;
+
+  --white-color: #ffffff;
+  --blue-color: #00A4E5;
+  --dark-gray-color: #979797;
+  --light-gray-color: #D8D8D8
+
+  --bebas-font-family: "Bebas Neue", sans-serif;
+
+  --header-bg-path: url("../assets/images/header-bg.jpg");
+}
+
+
