@@ -6,12 +6,15 @@
   --horizontal-content-padding: 250px;
 
   --white-color: #ffffff;
+  --black-color: #000000;
   --blue-color: #00a4e5;
   --dark-gray-color: #979797;
   --light-gray-color: #d8d8d8;
-  --color-text-nav-link: #48555b;
+  --dark-green-color: #48555b;
 
   --bebas-font-family: "Bebas Neue", sans-serif;
 
   --header-bg-path: url("../assets/images/header-bg.jpg");
+
+  --story-image-width: 140px;
 }

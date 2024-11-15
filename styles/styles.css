@@ -82,12 +82,13 @@ body {
 
         .nav-link {
           font-weight: 600;
-          color: var(--color-text-nav-link);
+          color: var(--dark-green-color);
           font-size: 0.75rem;
           letter-spacing: 1.09px;
           width: 100%;
           text-align: center;
           margin: 0;
+          text-transform: uppercase;
           transition: color 0.5s ease;
         }
 
@@ -97,6 +98,93 @@ body {
 
         .nav-link:hover {
           color: var(--blue-color);
+        }
+      }
+    }
+  }
+}
+
+.main {
+  padding: 0 var(--horizontal-content-padding);
+
+  .story-section {
+    padding: 57px 0 70px;
+
+    .story-title {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 2.31px;
+      font-size: 1.12rem;
+      position: relative;
+      padding-bottom: 16px;
+    }
+
+    .story-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 50px;
+      height: 2px;
+      background-color: var(--blue-color);
+      transform: translateX(-50%);
+    }
+
+    .story-content {
+      margin-top: 58px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .aside {
+        max-width: 50%;
+
+        .subtitle {
+          display: block;
+          font-weight: 700;
+          text-align: left;
+          font-size: 1.25rem;
+          margin-bottom: 40px;
+          margin-right: 77px;
+          line-height: 23px;
+
+          span {
+            color: var(--blue-color);
+            -webkit-text-stroke: 1px var(--black-color);
+          }
+        }
+
+        .text {
+          text-align: left;
+          margin-right: 77px;
+          letter-spacing: 0.19px;
+          font-size: 0.8rem;
+          color: var(--dark-green-color);
+          line-height: 21px;
+        }
+      }
+
+      .story-images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        .story-image {
+          position: relative;
+
+          .caption {
+            color: var(--white-color);
+            text-align: left;
+            position: absolute;
+            line-height: 29px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            top: 14px;
+            left: 14px;
+            word-spacing: var(--story-image-width);
+          }
         }
       }
     }
