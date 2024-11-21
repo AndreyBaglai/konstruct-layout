@@ -12,9 +12,13 @@
   --light-gray-color: #e6e6e6;
   --dark-green-color: #48555b;
 
+  --primary-footer-bg-color: #171819;
+  --secondary-footer-bg-color: #141a20;
+
   --bebas-font-family: "Bebas Neue", sans-serif;
 
-  --header-bg-path: url("../assets/images/header-bg.jpg");
+  --header-bg-url: url("../assets/images/header-bg.jpg");
+  --get-in-touch-url: url("../assets/images/get-in-touch-bg.png");
 
   --story-image-width: 140px;
 }
