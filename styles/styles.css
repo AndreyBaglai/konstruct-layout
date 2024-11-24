@@ -27,8 +27,9 @@ body {
   font-family: var(--root-font-family);
   background-color: var(--root-bg-color);
   font-size: var(--root-font-size);
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
+  position: relative;
 }
 
 .header {
@@ -72,16 +73,17 @@ body {
 }
 
 .nav {
-  position: relative;
   border-bottom: 1px solid var(--light-gray-color);
+  position: sticky;
+  top: 0px;
+  background-color: var(--white-color);
+  z-index: 100;
 
-  .sticky-nav-wrapper {
+  .nav-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px var(--horizontal-content-padding);
-    position: sticky;
-    top: 0px;
 
     .nav-logo {
       flex: 1;
